@@ -2,11 +2,12 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(40, 40, 40);
 }
 form{
     text-align: center;
-    color: aqua;
+    color: rgb(245, 5, 5);
+    
 }
 
 /* ########################################  PAGINA DE LOGIN  ########################################### */
@@ -63,26 +64,38 @@ label{
 
 div#container-acesso{
     background-position: center;
-    width: 700px;
-    margin-top: 120px;
+    width: 30cm;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    border-radius: 2000px;
+    border-radius: 500px;
     border-top-left-radius: 300px;
     border-bottom-right-radius: 300px;
-    box-shadow:1px 1px 1cm rgb(140, 255, 0);
+    box-shadow:5px 2px 8px rgb(140, 255, 0);
 }
+div#tabela-de-produtos{
+    width: 1000px;
+    
+}
+
+
+
 button#btn-produtoCADEIRA{
-    font-size: 15px;
-    border-radius: 10px;
-    max-width: 100px;
-    margin-top: 1cm;
+    width: 100px;
+    
 }
 button#btn-produtoMESA{
-    font-size: 15px;
-    border-radius: 10px;
-    max-width: 100px;
+    width: 100px;
+    
+}
+button#btn-produtoVENTILADOR{
+    width: 100px;
+    
+}
+button#btn-produtoARMARIO{
+    width: 100px;
+    
 }
 
 /* ########################################  FONTES DE LETRAS  ########################################### */
@@ -99,12 +112,14 @@ h2{
 
 h3{
     text-align: center;
-    color: rgb(0, 255, 26);
+    color: rgb(140, 255, 0);
     font-size: 25px;
 }
 div#alerta{
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    text-align: center;
+    width: center;
+    color: rgb(254, 2, 2);
     font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
 }
+
