@@ -12,21 +12,37 @@
     <h3>    
         {{nomeUsuario}}
     </h3>
+<!-- ############################################################################################: -->
 
     <div id=container-acesso>
+        {% set mensagens = get_flashed_messages() %}
+        {% if mensagens %}
+            <div id="alerta">
+                {{mensagens[0]}}
+            </div>
+        {% endif %}
+        <form action="acesso" method="post">
         
         <h2>TABELA DE PRODUTOS</h2>
 
-        <button type="submit" id="btn-produtoCADEIRA" value="entrar">CADEIRA</button>
-
-        <button type="submit" id="btn-produtoMESA" value="entrar">MESA</button>
-
-        <!-- <button type="submit" id="btn-comdesconto" value="entrar">COM DESCONTO</button> -->
-
-        <!-- <button type="submit" id="btn-semdesconto" value="entrar">SEM DESCONTO</button> -->
-
+            <dix id=tabela-de-produtos>
+               
+                <button type="submit" id="btn-produtoCADEIRA" value="entrar">CADEIRA</button>
+            <div>
+                <button type="submit" id="btn-produtoMESA" value="entrar">MESA</button>
+            <div>
+                <button type="submit" id="btn-produtoVENTILADOR" value="entrar">VENTILADOR</button>
+            <div>
+                <button type="submit" id="btn-produtoARMARIO" value="entrar">ARMARIO</button>
+            <div>
+                <label for="valor1"></label>
+            </div>
+            
+<!-- #################################################################################################: -->
+            </dix>
         
 
     <div>
+      
 </body>
 </html>
