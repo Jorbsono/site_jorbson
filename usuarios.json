@@ -1,0 +1,17 @@
+[
+    {
+        "log": "ADM-JORBSON",
+        "nome": "jorbson",
+        "senha": "1"
+    },
+    {
+        "log": "MÃE",
+        "nome": "joana",
+        "senha": "2"
+    },
+    {
+        "log":"FUNCIONARIO",
+        "nome": "neto",
+        "senha": "3"
+    }
+]

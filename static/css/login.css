@@ -1,25 +1,110 @@
 @charset "UTF-8";
 
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(0, 0, 0);
+}
+form{
+    text-align: center;
+    color: aqua;
+}
 
+/* ########################################  PAGINA DE LOGIN  ########################################### */
 
-
-
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: cornflowerblue;
-    color: black;
-}   
-
-div#conteiner-login{
-    background-position: center;
-    width: 300px;
-    margin-top: 100px;
+div#container-login{
+    background-position: bottom;
+    width: 500px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 30 px;
     text-align: center;
+    border-radius: 2000px;
+    border-top-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    box-shadow:1px 1px 1cm rgb(140, 255, 0);
+}
+
+input {
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+input:focus {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+button#btn-entrar{
+    color: rgb(255, 255, 255);
+    background-color: #000000;
     border-radius: 10px;
-    background-color: red;
-    opacity: 100%;
+    font-weight: bold;
+}
+
+button#btn-entrar:hover{
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+label{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    display: block;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* ########################################  PAGINA DE ACESSO  ########################################### */
+
+div#container-acesso{
+    background-position: center;
+    width: 700px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 2000px;
+    border-top-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    box-shadow:1px 1px 1cm rgb(140, 255, 0);
+}
+button#btn-produtoCADEIRA{
+    font-size: 15px;
+    border-radius: 10px;
+    max-width: 100px;
+    margin-top: 1cm;
+}
+button#btn-produtoMESA{
+    font-size: 15px;
+    border-radius: 10px;
+    max-width: 100px;
+}
+
+/* ########################################  FONTES DE LETRAS  ########################################### */
+h1{
+    color: rgb(255, 0, 0);
+    background-position: center;
+    text-align: center;
+    font-size: 25px;
+}
+h2{
+    color: white;
+    background-position: center;
+}
+
+h3{
+    text-align: center;
+    color: rgb(0, 255, 26);
+    font-size: 25px;
+}
+div#alerta{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
 }

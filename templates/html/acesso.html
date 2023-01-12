@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=divece-width, initial-scale=1.0">
-    <title>acesso</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css')}}">
+
 </head>
 <body>
+    <h3>    
+        {{nomeUsuario}}
+    </h3>
 
-    
-     <div>
-        <h1>OLÁ PESSOA</h1>
-        <h2>SHOW DE BOLA, VOCÊ TA CRINDO UM SITE</h2>
-        <h3>SEJA BEM VINDO {{       }}</h3>
-    </div>
+    <div id=container-acesso>
+        
+        <h2>TABELA DE PRODUTOS</h2>
 
+        <button type="submit" id="btn-produtoCADEIRA" value="entrar">CADEIRA</button>
+
+        <button type="submit" id="btn-produtoMESA" value="entrar">MESA</button>
+
+        <!-- <button type="submit" id="btn-comdesconto" value="entrar">COM DESCONTO</button> -->
+
+        <!-- <button type="submit" id="btn-semdesconto" value="entrar">SEM DESCONTO</button> -->
+
+        
+
+    <div>
 </body>
 </html>

@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=divece-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
-    <link rel="stylesheet" href="static/css/login.css">
-    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css')}}">
+    <link rel="stylesheet" href="/static/css/login.css">
 </head>
 <body>
 
-    
-    <div id="conteiner-login">
-        <from action="login" mathod="post">
-         <section id="login">
-            <label for="nome">nome:</label>
-            <input type="text"name="nome" id="nome" placeholder="EX: jonas">
-            <label for="senha">senha:</label>
-            <input type="password"name="senha" id="senha">
-            <button type="submit" value="entrar"
-             id="btn-entrar">CONFIRMAR</button>
-         </section>
-        </from>
+    <div id="container-login">
+        <h1>🦇<H1>
+        {% set mensagens = get_flashed_messages() %}
+        {% if mensagens %}
+            <div id="alerta">
+                {{mensagens[0]}}
+            </div>
+        {% endif %}
+        <form action="login" method="post">
+            
+            <section id="login">
+                
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome de usuario" required>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                <button type="submit" id="btn-entrar" value="entrar">✔️ENTRAR✔️</button>
+            </section>
+        </form>
     </div>
-
 </body>
 </html>
