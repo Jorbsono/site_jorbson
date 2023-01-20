@@ -24,6 +24,12 @@ div#container-login{
     border-bottom-right-radius: 300px;
     box-shadow:1px 1px 1cm rgb(140, 255, 0);
 }
+#circulo {
+    background: lightblue;
+    border-radius: 40%;
+    width: 90px;
+    height: 50px;
+}
 
 input {
     border-radius: 5px;
@@ -43,8 +49,10 @@ input:focus {
 button#btn-entrar{
     color: rgb(255, 255, 255);
     background-color: #787978;
-    border-radius: 10px;
+    border-radius: 80px;
     font-weight: bold;
+    width: 80px;
+    height: 80px;
 }
 
 button#btn-entrar:hover{
@@ -58,44 +66,6 @@ label{
     display: block;
     width: 100%;
     font-weight: bold;
-}
-
-/* ########################################  PAGINA DE ACESSO  ########################################### */
-
-div#container-acesso{
-    background-position: center;
-    width: 30cm;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-radius: 500px;
-    border-top-left-radius: 300px;
-    border-bottom-right-radius: 300px;
-    box-shadow:5px 2px 8px rgb(140, 255, 0);
-}
-div#tabela-de-produtos{
-    width: 1000px;
-    
-}
-
-
-
-button#btn-produtoCADEIRA{
-    width: 100px;
-    
-}
-button#btn-produtoMESA{
-    width: 100px;
-    
-}
-button#btn-produtoVENTILADOR{
-    width: 100px;
-    
-}
-button#btn-produtoARMARIO{
-    width: 100px;
-    
 }
 
 /* ########################################  FONTES DE LETRAS  ########################################### */
@@ -119,7 +89,7 @@ div#alerta{
     text-align: center;
     width: center;
     color: rgb(254, 2, 2);
-    font-size: 40px;
+    font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif ;
 }
 

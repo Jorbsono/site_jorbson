@@ -23,11 +23,11 @@ def login():
             if usuario == c['nome'] and senha == c['senha']:
                return render_template("html/acesso.html", nomeUsuario= "Usuario logado: " + c['log'])
             if cont >= len(lista):
-                flash('usuario invalido')
+                flash('tente novamente')
                 return redirect("/")
+           
 
-
-@app.route("/cadastrar", methods=['POST'])
+@app.route("/cadastro", methods=['POST'])
 def cadastrar():
     user = []
     usuario = request.form.get('nomecad')

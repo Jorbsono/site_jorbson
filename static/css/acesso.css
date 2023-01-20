@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(56, 56, 56);
+}
+form{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+div#container-acesso{
+    background-position: center;
+    width: 30cm;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 500px;
+    border-top-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    box-shadow:5px 2px 8px rgb(140, 255, 0);
+}
+div#tabela-de-produtos{
+ 
+}
+button#btn-produtoCADEIRA{
+    width: 100px;
+    
+}
+button#btn-produtoMESA{
+    width: 100px;
+    
+}
+button#btn-produtoVENTILADOR{
+    width: 100px;
+    
+}
+button#btn-produtoARMARIO{
+    width: 100px;
+    
+}
+h1{
+    color: rgb(255, 0, 0);
+    background-position: center;
+    text-align: center;
+    font-size: 25px;
+}
+h2{
+    color: white;
+    background-position: center;
+}
+
+h3{
+    text-align: center;
+    color: rgb(140, 255, 0);
+    font-size: 25px;
+}

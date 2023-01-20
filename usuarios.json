@@ -5,13 +5,14 @@
         "senha": "1"
     },
     {
-        "log": "MÃE",
+        "log": "M\u00c3\u0192E",
         "nome": "joana",
         "senha": "2"
     },
     {
-        "log":"FUNCIONARIO",
+        "log": "FUNCIONARIO",
         "nome": "neto",
         "senha": "3"
     }
+    
 ]

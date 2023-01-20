@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acesso</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/acesso.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadeira.css')}}">
 
 </head>
 <body>
@@ -15,14 +15,19 @@
 <!-- ############################################################################################: -->
 
     <div id=container-acesso>
-        
-        <form action="acesso" method="post">
+        {% set mensagens = get_flashed_messages() %}
+        {% if mensagens %}
+            <div id="alerta">
+                {{mensagens[0]}}
+            </div>
+        {% endif %}
+        <form action="cadeira" method="post">
         
         <h2>TABELA DE PRODUTOS</h2>
 
             <dix id=tabela-de-produtos>
                
-                <button type="submit" id="btn-produtoCADEIRA" value="100">CADEIRA</button>
+                <button type="submit" id="btn-produtoCADEIRA" value="entrar">CADEIRA</button>
             <div>
                 <button type="submit" id="btn-produtoMESA" value="entrar">MESA</button>
             <div>
